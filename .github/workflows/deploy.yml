@@ -25,5 +25,5 @@ jobs:
       - name: Deploy
         run: |
           aws lambda update-function-code \
-            --function-name ResumeParser \
+            --function-name ResumeParserFunction \
             --zip-file fileb://function.zip
