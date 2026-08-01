@@ -26,10 +26,10 @@ def extract_entities(text):
 
     text_lower = text.lower()
 
-   for skill in common_skills:
-    pattern = r"\b" + re.escape(skill.lower()) + r"\b"
-    if re.search(pattern, text_lower):
-        skills.append(skill)
+    for skill in common_skills:
+        pattern = r"\b" + re.escape(skill.lower()) + r"\b"
+        if re.search(pattern, text_lower):
+            skills.append(skill)
 
     # Simple name extraction
     lines = text.split("\n")
