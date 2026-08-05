@@ -22,6 +22,8 @@ jobs:
 
       - name: Run tests
         run: pytest tests/
+        env:
+          AWS_DEFAULT_REGION: us-east-1
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
